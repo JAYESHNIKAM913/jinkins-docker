@@ -18,7 +18,7 @@ pipieline {
          steps {
              script {
 		 if (fileExists('Dockerfile')) {
-                     sh "docker build -t
+                     sh "docker build -t"
 		     ${env.DOCKER_IMAGE} ."
 		 } else {
                      error "Dockerfile not found in the workspace."
